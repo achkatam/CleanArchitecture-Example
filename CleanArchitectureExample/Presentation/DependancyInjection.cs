@@ -1,12 +1,11 @@
-﻿namespace Presentation
-{
-    using Microsoft.Extensions.DependencyInjection;
+﻿namespace Presentation;
 
-    public static class DependancyInjection
+using Microsoft.Extensions.DependencyInjection;
+
+public static class DependancyInjection
+{
+    public static IServiceCollection AddPresentation(this IServiceCollection services)
     {
-        public static IServiceCollection AddPresentation(this IServiceCollection services)
-        {
-            return services;
-        }
+        return services;
     }
 }
